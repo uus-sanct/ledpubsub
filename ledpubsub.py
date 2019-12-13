@@ -106,8 +106,7 @@ logging.getLogger('apscheduler').setLevel(logging.WARNING)
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(led_pin, GPIO.OUT)
-GPIO.setup(switch_pin, GPIO.IN
-, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(switch_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 ## Print Debug messages for cert and key
 logger.debug("   cert: " + cert)   ## debug cert and path
 logger.debug("private: " + private)   ## debug privKey and path
